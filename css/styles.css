@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #01040e;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.back {
+    padding: 40px 0;
+    background-color: #f4c312fe;
+}
+
+.bee {
+    padding: 20px 80px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+.menu .logo {
+    display: flex;
+    font-weight: 800;
+    font-size: 25px;
+    color: #1c630c;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.logo img {
+    
+    height: 65px;
+    margin-right: 10px;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #101845;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #1244ce;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* estilos slide */
+
+.swiper-slide {
+    font-size: 18px;
+    background-color: #121418;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-next {
+    color: #f4c312fe;
+}
+
+.swiper-button-prev {
+    color: #f4c312fe;
+}
+
+.swiper-pagination-bullet {
+    background-color: #4b4949;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e6ea0f;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.slider {
+    width: 1100px;
+}
+
+.header-content {
+    text-align: right;
+    margin-top: 100px;
+}
+
+.slider {
+    width: 400px; 
+}
+
+.enlace {
+    display: inline-block;
+    color: #0e2288;
+    margin-top: 15px;
+}
+
+/* estilos section */
+
+.product img {
+    height: 250px;
+    
+}
+
+.product-txt {
+    margin-top: 25px;
+}
+
+.product h4 {
+    color: #0c8d80fe;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.product-txt p {
+    color: #000000;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.precio {
+    color: #e6ea0f;
+}
+
+#tienda {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #1244ce;
+}
+
+#contacto h2 {
+    color: #1244ce;
+    padding: 20px;
+}
+
+
+/* estilos footer */
+
+.footer {
+    padding: 10px 0px;
+    background-color: #01040e;
+}
+
+.footer-txt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.footer-txt h3 {
+    font-size: 20px;
+    color: #1244ce;
+    margin-bottom: 25px;
+}
+
+.footer-txt ul li {
+    font-size: 18px;
+    color: #434864;
+    margin-bottom: 10px;
+}
+
+.footer-txt ul li:hover {
+    color: #1244ce;
+}
+
+.footer-social {
+    background-color: #817272;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    
+}
+
+.social-img img {
+    margin-right: 30px;
+    width:  30px;
+    height: 21px;
+}
+
+.social-txt {
+    display: flex;
+}
+
+footer {
+    background-color: #121418;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos específicos */
+
+#mapa img { 
+    padding: 50px;
+    height: 350px;
+    width: 100%;
+    
+} 
+
+/* estilos contacto */
+#formulario-contacto input,
+#formulario-contacto textarea,
+#formulario-contacto button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#formulario-contacto button {
+    background-color: #121418;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover {
+    background-color: #555;
+} 
+
+/* estilos responsive */
+
+@media(max-width:991px) {
+
+.menu {
+    padding: 10px;
+}
+
+.menu label {
+    display: initial;
+}
+
+.back {
+    padding: 50px 0;
+}
+
+.menu .navbar {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     background-color: #010106ed;
+     display: none;
+
+}
+.menu .navbar ul li a {
+    color: #8cb013;
+}
+
+.menu .navbar ul li a:hover {
+    color: #b5e80d;
+}
+
+.menu .navbar ul li {
+    width: 100%;
+}
+
+#menu:checked ~ .navbar {
+    display: initial;
+}
+
+.header-content {
+    padding: 30px;
+    margin-top: 70px;
+}
+
+.sleder {
+    width: 420%;
+}
+
+.enlace {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.bee {
+    padding: 50px 30px;
+}
+
+.footer {
+    padding: 30px;
+}
+
+.footer-txt{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-1 {
+    text-align: center;
+    margin-bottom: 15px;        
+}
+
+.footer-social {
+    flex-direction: column;
+    align-items:center;
+} 
+
+.social-img {
+    margin-bottom: 35px;
+    
+}
+
+
+}
